@@ -369,7 +369,9 @@ const mount = () => {
 
 const unmount = () => {
 	disconnect();
+};
 
+export const emptyMenus = () => {
 	if (process.platform !== 'darwin') {
 		Menu.setApplicationMenu(null);
 		return;
